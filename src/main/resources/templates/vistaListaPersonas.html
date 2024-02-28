@@ -5,11 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<body>
-	<h1>Hola Mundo desde Java</h1>
-	<table>
+<body style="background-color: rgb(17, 29, 57);">
+	<h1 style="text-align: center;color: white;">- TALLER PERSONA - </h1>
+	<table class="table table-dark">
 		<thead>
 			<tr>
 				<th>Cédula</th>
@@ -28,12 +30,12 @@
 				<td th:text="${persona.genero}"></td>
 				<td>
 					<form th:action="@{/personas/buscarPorCedula/{cedulaPersona}(cedulaPersona=${persona.cedula})}" th:method="GET">
-					<input type="submit" value="Editar">
+					<input type="submit" value="Editar" class="btn btn-warning">
 					</form>
 				</td>
 				<td>
 					<form th:action="@{/personas/borrar/{cedula}(cedula=${persona.cedula})}" th:method="DELETE">
-					<input type="submit" value="Eliminar">
+					<input type="submit" value="Eliminar" class="btn btn-warning">
 					</form>
 				</td>
 			</tr>
