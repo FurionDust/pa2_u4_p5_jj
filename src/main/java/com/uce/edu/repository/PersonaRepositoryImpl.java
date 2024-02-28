@@ -54,4 +54,12 @@ public class PersonaRepositoryImpl implements IPersonaRepository {
 		return myQuery.getResultList();
 	}
 
+	@Override
+	public Persona actualizarPorCedula(String cedula) {
+		// TODO Auto-generated method stub
+		TypedQuery<Persona> myQuery = this.entityManager.createQuery("SELECT p FROM Persona p",
+				Persona.class);
+		return null;
+	}
+
 }

@@ -16,5 +16,5 @@ public interface IPersonaRepository {
 	
 	public void eliminarPorCedula(String cedula);
 	
-	
+	public Persona actualizarPorCedula(String cedula);
 }

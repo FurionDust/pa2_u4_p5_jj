@@ -16,4 +16,6 @@ public interface IPersonaService {
 	public void borrarPorCedula(String cedula);
 	
 	public List<Persona> consultarTodos();
+
+	public Persona actualizarPorCedula(String cedula);
 }
